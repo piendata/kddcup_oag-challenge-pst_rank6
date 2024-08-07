@@ -1,8 +1,8 @@
 
 ## Introduction
-This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical report is available follows: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "GLeveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
+This repository contains the sample code that achieved 5th place in the KDD 2024 OAG-Challenge PST task. The technical report is available here: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "GLeveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
 
-If you interesting in this repository, please check this report.
+If you are interested in this repository, please check out this report.
 
 ## Prerequisites
 - Linux System
@@ -49,21 +49,16 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 
 ## description of the files
 ### 1_data_manipulation.ipynb
-This notebook uses XML files and data from DBLP and OAG to extract the following information about academic papers and their references:
+This notebook corresponds with the Section "Data Extraction from XML Files."
 
 ### 2_text_embedding.ipynb
-Text embeddings are performed on the titles of papers and their references using `multilingual-e5-large`, and cosine similarity is calculated. Additionally, these embedding vectors are reduced to two dimensions using UMAP.
+This notebook corresponds with the Section "Generation of Textual Features."
 
 ### 3_network_processing.ipynb
-Features related to citation counts and page information for each author were created using data from sources like DBLP. Additionally, a network of references was built, and after creating embeddings for nodes using node2vec to capture the network relationships of papers from sources like DBLP, these embeddings were dimensionally reduced using UMAP and used as features.
+This notebook corresponds with the Section "Generation of Network Features."
 
-### 4_createMLdataset_and_train.ipynb
-The features generated above were used to conduct machine learning training and inference. Training was performed using LightGBM and CatBoost, with parameter optimization conducted using Optuna. Due to the very limited number of positive examples available, BorderlineSMOTE was used to perform oversampling to increase the data volume. The final output was produced by ensembling the prediction results of LightGBM and CatBoost.
-
-### 5_inference.ipynb
-Load the model with the highest score obtained during the training process and make predictions. Also, generate a submission file.
+### 4_createMLdataset_and_train.ipynb and 5_inference.ipynb
+This notebook corresponds with the Section "Model Training and Inference" and "\section{Experiments."
 
 ## note
 The "make_submission_file.ipynb" notebook formats the output in the submission file format and includes titles. It is used for comparing prediction results, and the generated file is stored as "valid_submission_test.json" in the data folder.
-
-If you have any questions, please contact me. Email:piendata@gmail.com
