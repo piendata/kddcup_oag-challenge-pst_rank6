@@ -1,6 +1,6 @@
 
 ## Introduction
-This repository contains the sample code that achieved 5th place in the KDD 2024 OAG-Challenge PST task. The technical report is available here: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "GLeveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
+This repository contains the sample code that achieved 5th place in the KDD 2024 OAG-Challenge PST task. The technical report is available here: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
 
 If you are interested in this repository, please check out this report.
 
@@ -58,7 +58,7 @@ This notebook corresponds with the Section "Generation of Textual Features."
 This notebook corresponds with the Section "Generation of Network Features."
 
 ### 4_createMLdataset_and_train.ipynb and 5_inference.ipynb
-This notebook corresponds with the Section "Model Training and Inference" and "\section{Experiments."
+This notebook corresponds with the Section "Model Training and Inference" and "Experiments."
 
 ## note
 The "make_submission_file.ipynb" notebook formats the output in the submission file format and includes titles. It is used for comparing prediction results, and the generated file is stored as "valid_submission_test.json" in the data folder.
