@@ -1,6 +1,6 @@
 
-This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical report is available follows:
-https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions)
+## Introduction
+This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical report is available follows: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "GLeveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
 
 If you interesting in this repository, please check this report.
 
