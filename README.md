@@ -40,7 +40,7 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 ```
 
 
-![![Githubロゴ](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png "Github Logo")
+![![Main Approch](https://github.com/piendata/kddcup_oag-challenge-pst_rank6/blob/main/figure.pdf "Main Approach")
 
 ## Figure of the Main approach
 
