@@ -1,6 +1,8 @@
 
-This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical paper is available follows:
+This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical report is available follows:
 https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions)
+
+If you interesting in this repository, please check this report.
 
 ## Prerequisites
 - Linux System
@@ -39,10 +41,11 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
     		--paper-xml(load competition dataset)
 ```
 
+## Main Approach
 
-![![Main Approch](https://github.com/piendata/kddcup_oag-challenge-pst_rank6/blob/main/figure.jpg "Main Approach")
+![Main Approch](https://github.com/piendata/kddcup_oag-challenge-pst_rank6/blob/main/figure.jpg "Main Approach")
 
-## Figure of the Main approach
+
 
 ## description of the files
 ### 1_data_manipulation.ipynb
