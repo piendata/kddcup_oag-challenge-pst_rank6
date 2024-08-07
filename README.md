@@ -1,13 +1,15 @@
 
+This repository is the sample code which achieved 5th place at KDD 2024 OAG-Challenge PST task. The techinical paper is available follows:
+https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions)
+
 ## Prerequisites
-- Linux
+- Linux System
 - Python 3.10
 - CUDA 12.0
-- NVIDIA A100
+- NVIDIA A100 80G
 
 ### Installation
-
-Clone this repo.
+Clone this repository.
 
 ```bash
 git clone 
@@ -28,7 +30,7 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 
 ## Directory structure
 ```bash
---kddcup_oag-challenge-pst_rank6
+--kddcup2024-oagpst-solution
 	--script
 		--...(some files)
 	--data
@@ -37,22 +39,17 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
     		--paper-xml(load competition dataset)
 ```
 
-## method
+
+![![Githubロゴ](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png "Github Logo")
+
+## Figure of the Main approach
+
+## description of the files
 ### 1_data_manipulation.ipynb
 This notebook uses XML files and data from DBLP and OAG to extract the following information about academic papers and their references:
 
-- Title
-- Abstract
-- Text information near the references (context)
-
-The XML files do not provide reference IDs, only titles and author information are available. To obtain further details such as abstracts of the references, it is necessary to correctly match records with the DBLP and OAG data.
-The processed data is then combined with the given train, validation, and test datasets, and undergoes preprocessing such as normalization.
-During the process, some features are created. The citation number and citation count extracted from each reference in the XML files have been significant features in my model.
-
 ### 2_text_embedding.ipynb
 Text embeddings are performed on the titles of papers and their references using `multilingual-e5-large`, and cosine similarity is calculated. Additionally, these embedding vectors are reduced to two dimensions using UMAP.
-
-Similar processing is also applied to abstracts and contexts, particularly retrieving the text before and after citation points and calculating the cosine similarity of these pairs. These generated similarities have served as important features in my model.
 
 ### 3_network_processing.ipynb
 Features related to citation counts and page information for each author were created using data from sources like DBLP. Additionally, a network of references was built, and after creating embeddings for nodes using node2vec to capture the network relationships of papers from sources like DBLP, these embeddings were dimensionally reduced using UMAP and used as features.
