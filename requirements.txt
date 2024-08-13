@@ -10,7 +10,7 @@ shap==0.44.1
 joblib==1.2.0
 torch==2.1.0
 fuzzywuzzy==0.18.0
-umap==0.1.1
+umap-learn
 lightgbm==4.3.0
 optuna==2.4.0
 transformers==4.40.0

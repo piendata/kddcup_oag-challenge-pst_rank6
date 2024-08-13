@@ -49,6 +49,7 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 
 ## description of the files
 ### 1_data_manipulation.ipynb
+Processing data in this competition and creating hand-crafted features.
 This notebook corresponds with the Section "Data Extraction from XML Files."
 
 ### 2_text_embedding.ipynb
