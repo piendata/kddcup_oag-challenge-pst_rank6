@@ -49,18 +49,17 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 
 ## description of the files
 ### 1_data_manipulation.ipynb
-Processing data for this competition and creating hand-crafted features.
-This notebook corresponds with the Section "Data Extraction from XML Files."
+This notebook processes data for this competition and creates hand-crafted features. 
+It corresponds to the section "Data Extraction from XML Files."
 
 ### 2_text_embedding.ipynb
-
-This notebook corresponds with the Section "Generation of Textual Features."
+This notebook generates text embedding features using the text embedding model 'multilingual-E5-large.' 
+It corresponds to the section "Generation of Textual Features."
 
 ### 3_network_processing.ipynb
-This notebook corresponds with the Section "Generation of Network Features."
+This notebook creates graph features using the node embedding model 'node2vec.' 
+It corresponds to the section "Generation of Network Features."
 
 ### 4_createMLdataset_and_train.ipynb and 5_inference.ipynb
-This notebook corresponds with the Section "Model Training and Inference" and "Experiments."
-
-## note
-The "make_submission_file.ipynb" notebook formats the output in the submission file format and includes titles. It is used for comparing prediction results, and the generated file is stored as "valid_submission_test.json" in the data folder.
+These notebooks handle model training, ensembling with data augmentation, and inference using the best ensemble model. 
+They correspond to the sections "Model Training and Inference" and "Experiments."
