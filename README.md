@@ -1,4 +1,9 @@
 
+<div style="border: 1px solid red; padding: 10px; background-color: #fdd; color: red;">
+  <strong>Attention:</strong> This page moved to the following page : https://github.com/ToyotaInfoTech/kddcup2024-oagpst-solution
+</div>
+
+
 ## Introduction
 This repository contains the sample code that achieved 5th place in the KDD 2024 OAG-Challenge PST task. The technical report is available here: [Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References](https://openreview.net/forum?id=Mi5T2wgySR&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DKDD.org%2F2024%2FWorkshop%2FOAG-Challenge_Cup%2FAuthors%23your-submissions) "Leveraging Hybrid Embeddings and Data Augmentation for Identifying Significant References")
 
@@ -49,17 +54,13 @@ And please download the DBLP-Citation-network V16 from [DBLP](https://open.amine
 
 ## description of the files
 ### 1_data_manipulation.ipynb
-This notebook processes data for this competition and creates hand-crafted features. 
-It corresponds to the section "Data Extraction from XML Files."
+This notebook processes data for this competition and creates hand-crafted features. It corresponds to the section "Data Extraction from XML Files."
 
 ### 2_text_embedding.ipynb
-This notebook generates text embedding features using the text embedding model 'multilingual-E5-large.' 
-It corresponds to the section "Generation of Textual Features."
+This notebook generates text embedding features using the text embedding model 'multilingual-E5-large.' It corresponds to the section "Generation of Textual Features."
 
 ### 3_network_processing.ipynb
-This notebook creates graph features using the node embedding model 'node2vec.' 
-It corresponds to the section "Generation of Network Features."
+This notebook creates graph features using the node embedding model 'node2vec.' It corresponds to the section "Generation of Network Features."
 
 ### 4_createMLdataset_and_train.ipynb and 5_inference.ipynb
-These notebooks handle model training, ensembling with data augmentation, and inference using the best ensemble model. 
-They correspond to the sections "Model Training and Inference" and "Experiments."
+These notebooks handle model training, ensembling with data augmentation, and inference using the best ensemble model. They correspond to the sections "Model Training and Inference" and "Experiments."
